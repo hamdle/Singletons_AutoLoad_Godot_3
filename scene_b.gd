@@ -16,5 +16,6 @@ func _ready():
 
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://scene_a.tscn")
+	# get_tree().change_scene("res://scene_a.tscn")
+	get_node('/root/global').goto_scene("res://scene_a.tscn")
 	pass # replace with function body
